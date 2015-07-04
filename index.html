@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Introducing Sweet Water, made with real, fresh fruit and pure water. A healthy, delicious choice, with a real fruit flavor. Try Sweet Water today!">
+<link rel="stylesheet" type="text/css" href="styles/jquery.fullPage.css" />
+<link href="styles/jquery.bxslider.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="styles/base.css" />
+<link href="styles/lightbox.css" rel="stylesheet" />
+<link rel="shortcut icon" href="img/icon.ico" />
+<title>Sweet Water</title>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery.fullPage.js"></script>
+<script src="scripts/jquery.bxslider.min.js"></script>
+<script src="scripts/lightbox.min.js"></script>
+<script src="scripts/scripts.js"></script>
+</head>
+
+<body>
+
+<!-- Facebook Script -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=103416602206&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- end Facebook Script -->
+
+<div id="fullpage">
+<div class="section">
+<!-- - - - - - - - - - Home - - - - - - - -  -->
+	<div class="slide" data-anchor="home" id="home-page">
+		<img src="img/logo.gif" class="logo" alt="Sweet Fruit Water">
+		<h1>Fresh &#9702; Fruity &#9702; Delicious</h1>
+		<ul class="bxslider">
+  			<li><img src="img/berry.jpg" alt="berry" /></li>
+  			<li><img src="img/citrus.jpg" alt="citrus" /></li>
+  			<li><img src="img/cucumber-melon.jpg" alt="cucumber melon" /></li>
+  			<li><img src="img/strawberry-kiwi.jpg" alt="strawberry kiwi" /></li>
+  			<li><img src="img/cherry-pomegranate.jpg" alt="cherry pomegranate" /></li>
+		</ul>
+	</div>
+
+<!-- - - - - - - - - - About - - - - - - - -  -->
+	<div class="slide" data-anchor="about" id="about-page">
+		<h1 class="page-name">About</h1>
+
+		<div class="content">
+		<h2>Fresh Fruit & Pure Water<br>End of Story</h2>
+		<img src="img/orange-slices.gif" alt="Orange Slices" title="" class="img-left">
+
+		<div class="paragraphs">
+		<h3>Made Fresh Every Day</h3>
+		<p>No need to worry about weird chemicals or strange flavorings. Just fruit and H<sub>2</sub>O. We promise there'll be no surprises.</p>
+		</div><!-- end paragraphs div -->
+		<div class="clear"></div>
+		</div><!-- end content div -->
+	</div>
+
+
+<!-- - - - - - - - - - Flavors - - - - - - - -  -->
+	<div class="slide" data-anchor="flavors" id="flavors-page">
+		<h1 class="page-name">Flavors</h1>
+
+		<div class="content">
+		<div id="flavors-column">
+		<img src="img/thumb_berry.png" alt="Berry Flavor" title="" id="berry">
+		<img src="img/thumb_citrus.png" alt="Citrus Flavor" title="" id="citrus">
+		<img src="img/thumb_cucumbermelon.png" alt="Cucumber Melon Flavor" title="" id="cucumbermelon">
+		<img src="img/thumb_strawberrykiwi.png" alt="Strawberry Kiwi" title="" id="strawberrykiwi">
+		<img src="img/thumb_cherrypomegranate.png" alt="Cherry Pomegranate Flavor" title="" id="cherrypomegranate">
+		</div><!-- end flavors-column div -->
+
+		<div id="flavors-container">
+			<a href="" data-lightbox="nutrition" id="flavors-lightbox"><div id="nutrition-info">Nutrition<br>Information</div></a>
+			<h2 id="flavor-title"></h2>
+			<p id="flavor-description"></p>
+			<img src="img/choose-flavor.gif" alt="flavor-image" title="" id="flavor-image">
+		</div><!-- end flavors container -->
+
+
+		<div class="clear"></div>
+		</div><!-- end content div -->
+	</div>
+
+
+<!-- - - - - - - - - - Sign Up Page - - - - - - - -  -->
+	<div class="slide" data-anchor="signup" id="signup-page">
+		<h1 class="page-name">Sign Up</h1>
+		
+		<div class="content">
+		<h2 class="long">Be the first to know when Sweet is released.<br>Sign up here!</h2>
+		
+		<form action="scripts/FormToEmail.php" method="post" enctype="multipart/form-data" id="signUpForm">
+		
+		<fieldset>
+			<p>Name:</p>
+			<input type="text" name="first_name" value="" placeholder="First">
+			<input type="text" name="last_name" value="" placeholder="Last">
+			<label><span>Age:</span><input type="number" name="age" value="" placeholder="00"></label>
+			<p>Favorite Flavor:</p>
+			<select name="flavors-select">
+				<option value="berry">Berry</option>
+				<option value="citrus">Citrus</option>
+				<option value="cucumber-melon">Cucumber Melon</option>
+				<option value="strawberry-kiwi">Strawberry Kiwi</option>
+				<option value="cherry-pomegranate">Cherry Pomegranate</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<label><span>Email:</span><input type="email" name="email" value=""></label>
+			<label><span>Phone Number:</span><input type="tel" name="phone" value="" placeholder="000-000-0000"></label>
+			<p>How would you like to be contacted?</p>
+			<label><input type="radio" name="contact_method" value="email_contact"><span class="right">Email</span></label>
+			<label><input type="radio" name="contact_method" value="call_contact"><span class="right">Phone Call</span></label>
+			<label><input type="radio" name="contact_method" value="text_contact"><span class="right">Text</span></label>
+			</fieldset>
+			<div class="clear"></div>
+			<label class="center"><input type="checkbox" name="offers" value="Yes" checked="checked"><span class="right">Want email coupons, offers and deals from us?</span></label>
+
+			<input type="submit" name="submit" value="Submit" id="submit">
+		</form>
+		
+		</div><!-- end content div --> 
+	</div>
+
+<!-- - - - - - - - - - Find Page - - - - - - - -  -->
+	<div class="slide" data-anchor="find" id="find-page">
+		<h1 class="page-name">Find</h1>
+		<div class="content">
+			<h2 class="long">Find Sweet near you</h2>
+			<div id="google-maps">
+			<iframe src="https://www.google.com/maps/d/embed?mid=zX9JBoTRPkxg.kSwfAHA2II2s" width="640" height="480"></iframe>
+			</div><!-- end google maps div -->
+		</div><!-- end content div -->
+	</div>
+
+</div><!-- end section div -->
+</div><!-- end fullpage div -->
+
+<div class="fb-like" data-href="http://test.kaitlynjoy.com/gcom366/sweet/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+
+<nav>
+
+	<ul>
+		<li><a href="#0/home">Home</a></li>
+		<li><a href="#0/about">About</a></li>
+		<li><a href="#0/flavors">Flavors</a></li>
+		<li><a href="#0/signup">Sign Up</a></li>
+		<li><a href="#0/find">Find</a></li>
+	</ul>
+</nav>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60116563-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Initialize scripts -->
+<script>
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		verticalCentered: false,
+		loopHorizontal: false,
+		fixedElements: 'nav',
+		anchors: ['0','home', 'about', 'flavors', 'signup', 'find']
+	});
+
+	$('.bxslider').bxSlider({
+		mode: 'fade',
+ 		pager: false,
+ 		auto: true,
+ 		speed: 1500
+  });
+});
+</script>
+</body>
+</html>

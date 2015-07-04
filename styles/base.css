@@ -1,0 +1,426 @@
+@charset "UTF8";
+/* CSS Document */
+
+/*
+Colors:
+	Blueberry: 
+	#005068
+	rgb(0, 80, 104)
+
+	Lime: 
+	#90ff00
+	rgb(144, 255, 0)
+
+	Gray:
+	#2d2d2d
+	rgb(45, 45, 45)
+
+	Raspberry:
+	#ff003d
+	rgb(255, 0, 61)
+
+*/
+
+/* -------------------------- Start CSS Reset Here -------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, textarea, input, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*    --------------------------  start my CSS Here  -----------------------  */
+
+/* -------- Fonts ------------ */
+@font-face {
+    font-family: 'newchesterregular';
+    src: url('../fonts/Newchester-webfont.eot');
+    src: url('../fonts/Newchester-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Newchester-webfont.woff2') format('woff2'),
+         url('../fonts/Newchester-webfont.woff') format('woff'),
+         url('../fonts/Newchester-webfont.ttf') format('truetype'),
+         url('../fonts/Newchester-webfont.svg#newchesterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'faranvaleregular';
+    src: url('../fonts/Faranvale-webfont.eot');
+    src: url('../fonts/Faranvale-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Faranvale-webfont.woff2') format('woff2'),
+         url('../fonts/Faranvale-webfont.woff') format('woff'),
+         url('../fonts/Faranvale-webfont.ttf') format('truetype'),
+         url('../fonts/Faranvale-webfont.svg#faranvaleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* ------------ Basic -------------- */
+
+
+html {
+	background-color: #fff;
+	font-family: 'newchesterregular', 'Arial', 'Verdana', sans-serif;
+	color: #2d2d2d;
+	font-size: 1.1em;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3.8em;
+	font-weight: bold;
+}
+
+h1.page-name {
+	font-family: 'faranvaleregular';
+	float: right;
+	margin: 10px 140px 0 0;
+	background-color: rgba(255, 255, 255, .7);
+	padding: 5px;
+	border-radius: 20px;
+}
+
+h2 {
+	font-size: 3em;
+	color: #005068;
+	line-height: 1em;
+	margin-bottom: 20px;
+}
+
+h2.long {
+	font-size: 2em;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+
+.center {
+	text-align: center;
+}
+
+/*    --------------------------  Home page  -----------------------  */
+	.logo {
+		margin: 20px 0 0 20px;
+	}
+
+	/* Slider */
+	.bx-wrapper .bx-viewport {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border:  none;
+	left: 0;
+	background: #fff;
+	max-width: 1280px;
+	margin: 0 auto;
+	}
+
+
+/*    --------------------------  Nav  -----------------------  */
+
+nav {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background-color: rgba(255, 255, 255, .7);
+	padding: 5px;
+	border-radius: 20px;
+}
+
+nav li {
+	float: left;
+	margin: 0 10px;
+}
+
+nav li a {
+	color: #2d2d2d;
+}
+
+
+/*    --------------------------  Interior pages  -----------------------  */
+#fullpage, #thankyou-page {
+	background-image: url('../img/seamless2.png');
+	background-repeat: repeat;
+	background-position: left top;
+	background-image: url('../img/logo-large.png'), url('../img/seamless2.png');
+	background-repeat: no-repeat, repeat;
+	background-position: left top, left top;
+}
+
+#home-page {
+	background-image: none;
+	background-color: #fff;
+}
+
+/*
+#about-page, #flavors-page, #signup-page, #find-page {
+	background-image: url('../img/logo-large.png'), url('../img/texture2.jpg');
+	background-repeat: no-repeat, repeat;
+	background-position: left top, left top;
+	/*background-color: #3190AA;
+	background-image: url('../img/logo-large.png');
+	background-repeat: no-repeat;
+	background-position: cover; 
+
+
+} */
+
+img.img-left {
+	float:left;
+	width: 45%;
+	padding-right: 5%;
+	max-width: 574px;
+}
+
+div.content {
+	margin: 140px 0 20px 0;
+	padding: 40px 5% 40px 5%;
+	background-color: rgba(255, 255, 255, .85);
+}
+
+div.paragraphs {
+
+}
+#flavors-column {
+	width: 75px;
+	float: left;
+}
+
+#flavors-column img {
+	border-radius: 75px;
+	border: 4px solid #fff;
+	-webkit-transition: all .25s;
+	-moz-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+#flavors-column img:hover {
+	cursor: pointer;
+	-webkit-box-shadow: 2px 2px 5px #2d2d2d;
+	-moz-box-shadow: 2px 2px 5px #2d2d2d;
+	box-shadow: 2px 2px 5px #2d2d2d;
+}
+
+#flavors-container {
+	margin-left: 125px;
+}
+
+#flavors-container img {
+	width: 100%;
+
+}
+
+#flavor-description {
+	font-size: 1.5em;
+}
+
+.activeFlavor {
+	-webkit-box-shadow: 2px 2px 5px #2d2d2d;
+	-moz-box-shadow: 2px 2px 5px #2d2d2d;
+	box-shadow: 2px 2px 5px #2d2d2d;
+}
+
+div#nutrition-info {
+	float: right;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	color: #005068;
+	line-height: 1;
+	text-align: center;
+	border: 4px solid #005068;
+	-webkit-transition: all .25s;
+	-moz-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+div#nutrition-info:hover {
+	cursor: pointer;
+	background-color: #005068;
+	color: #fff;
+}
+
+#thankyou-page {
+	height: 100%;
+}
+/* ---------------------- Form --------------------------- */
+
+form {
+	margin-top: 20px;
+}
+
+fieldset {
+	width: 46%;
+	float: left;
+	padding: 0 2%;
+}
+
+label {
+	display: block;
+}
+
+label span {
+	margin-right: 20px;
+}
+
+span.right {
+	margin-left: 15px;
+}
+
+label.center {
+	margin-top: 20px;
+	text-align: center;
+}
+
+fieldset input {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input {
+	border: 1px solid #d0d0d0;
+	border-radius: 10px;
+	padding: 5px;
+	-webkit-transition: all .25s;
+	-moz-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+input:focus {
+	border: 1px solid #005068;
+}
+
+input[type="radio"] {
+	display: inline;
+}
+
+input#submit {
+	background-color: #fff;
+	border: 4px solid #005068;
+	display: block;
+	width: 100px;
+	margin: 10px auto 0 auto;
+	-webkit-transition: all .25s;
+	-moz-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+input#submit:hover {
+	cursor: pointer;
+	background-color: #005068;
+	color: #fff;
+}
+
+
+/* ---------------------- Misc --------------------------- */
+
+#google-maps {
+	position: relative;
+	padding-bottom: 50%;
+	height: 0;
+	overflow: hidden;
+}
+
+#google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100%;
+	margin-top:-40px;
+}
+
+a#flavors-lightbox {
+	display: none;
+}
+
+.fb-like {
+	position: absolute;
+	bottom: 40px;
+	left: 10px;
+}
+
+/* ---------------------- Arrows --------------------------- */
+
+.fp-controlArrow {
+    position: absolute;
+    z-index: 10;
+    top: 50px;
+    cursor: pointer;
+    width: 101px;
+    height: 100px;
+    border-style: solid;
+    margin-top: -38px;
+    border-radius: 50px;
+}
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 101px;
+    border-width: 38.5px 34px 38.5px 0;
+    border:none;
+    background-image: url('../img/arrow-left.gif');
+}
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border:none;
+    background-image: url('../img/arrow-right.gif');
+}
